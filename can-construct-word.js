@@ -21,6 +21,9 @@ function canConstructWord(word, letters) {
   return true;
 }
 
+/**
+ * Takes in str; creates an obj w/ frequency of characters; returns obj
+ */
 
 function getFrequencyCounter(str) {
   const freqs = {};
