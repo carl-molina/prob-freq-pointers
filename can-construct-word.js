@@ -11,7 +11,9 @@ function canConstructWord(word, letters) {
   const wordFreq = getFrequencyCounter(word);
   const lettersFreq = getFrequencyCounter(letters);
 
+  // TODO: let letter in wordFreq
   for (let key in wordFreq) {
+    //TODO: can combine if and else if return false statements
     if (lettersFreq[key] === undefined) {
       return false;
     } else if (wordFreq[key] > lettersFreq[key]) {
